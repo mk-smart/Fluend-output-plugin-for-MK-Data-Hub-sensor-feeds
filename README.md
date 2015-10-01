@@ -1,14 +1,12 @@
 # Fluend output plugin for MK Data Hub sensor feeds
-This is a simple output plugin for fluentd that can send data (time/value) to a sensor stream in the MK Data Hub.
+This is a simple [Fluentd](http://www.fluentd.org/) output plugin for fluentd that can send data (time/value) to a sensor stream in the MK Data Hub.
 The plugin requires the ID of the feed and of the stream to post to, the API key to use and the data attribute to use for as the value to record. (see example below).
 
 ## Installation 
-
-Copy the mkdh.rb file in the plugin directory of Fluentd
+Copy the [mkdh.rb](mkdh.rb) file in the plugin directory of Fluentd
 Restart Fluentd
 
 ## Example
-
 This example configuration sends the size and the code of requests to an apache server (optained from the logs) to two different streams of the same sensor feed on the MK Data Hub.
 
 ```xml
