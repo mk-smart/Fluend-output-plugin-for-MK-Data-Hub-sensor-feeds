@@ -11,6 +11,7 @@ Restart Fluentd
 
 This example configuration sends the size and the code of requests to an apache server (optained from the logs) to two different streams of the same sensor feed on the MK Data Hub.
 
+```xml
 <source>
   type tail
   format apache
@@ -35,3 +36,4 @@ This example configuration sends the size and the code of requests to an apache 
     valueattr code
   </store>
 </match>
+```
