@@ -3,11 +3,10 @@ This is a simple [Fluentd](http://www.fluentd.org/) output plugin for fluentd th
 The plugin requires the ID of the feed and of the stream to post to, the API key to use and the data attribute to use for as the value to record. (see example below).
 
 ## Installation 
-Copy the [mkdh.rb](mkdh.rb) file in the plugin directory of Fluentd
-Restart Fluentd
+Copy the [mkdh.rb](mkdh.rb) file in the plugin directory of Fluentd and restart Fluentd
 
 ## Example
-This example configuration sends the size and the code of requests to an apache server (optained from the logs) to two different streams of the same sensor feed on the MK Data Hub.
+This example configuration sends the size and the code of requests from the logs of an apache server to two different streams of the same sensor feed on the MK Data Hub.
 
 ```xml
 <source>
